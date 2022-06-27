@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d18f754ade.js" crossorigin="anonymous"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon-bars" onclick="run(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="menu" class="menu-bar">
+            <a class="active" href="#"><i class="fa-solid fa-house"></i>Anasayfa</a>
+            <a href="#"><i class="fa-solid fa-book"></i>Araçlar</a>
+            <a href="#"><i class="fa-solid fa-globe"></i>Dil</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>İletişim</a>
+            <a href="#"><i class="fa-solid fa-trash"></i>Geri Dönüşüm</a>
+        </div>
+    </div>
+
+   <script src="./script.js"></script>
+   <script>
+    function run(x){
+        x.classList.toggle("change");
+        document.querySelector("#menu").classList.toggle("open");
+
+    //   var a=document.querySelector("#menu a");
+    //   for(i=0;i<a.lenght;i++){
+
+    //   }
+    //   a.classList.toggle("slide");
+    }
+   </script>
+</body>
+
+</html>
